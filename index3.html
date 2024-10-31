@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            text-align: center;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        /* Smoother Background Animation */
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+            25% { background: linear-gradient(135deg, #fcb69f, #ff9a9e); }
+            50% { background: linear-gradient(135deg, #ff9a9e, #ffecd2); }
+            75% { background: linear-gradient(135deg, #ffecd2, #ff9a9e); }
+            100% { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+        }
+
+        /* Main Container */
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Text Shadow for All Text */
+        h1, p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 3em;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            animation: fadeUp 1.5s ease-in-out;
+        }
+
+        /* Button Styles */
+        .button {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 15px 32px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4), 0 0 10px rgba(255, 126, 95, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-bottom: 3.5px;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 126, 95, 0.5), 0 0 15px rgba(255, 126, 95, 0.8);
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+
+        /* Image Style */
+        .computer-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .computer-image:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COMPUTER SYSTEM</h1>
+        <!-- Clickable Image with Animation -->
+        <a href="https://www.pcworld.com" target="_blank">
+            <img src="computer-set.jpg" alt="Computer Set Image" class="computer-image">
+        </a>
+        <p>A computer is an electronic machine that works under the instructions given by you. It can accept data in (input), manipulate the data according to specified rules in (process), produce results in (output), and store the results for future use.</p>
+        <p>Today, in the age of electronic revolution, computers have become an integral part of our lives. We can say that computers have entered every walk of life—be it at home, at work, or at school. Most of our daily activities either involve the use of or depend upon the information derived from a computer.</p>
+        <p>Many schools, colleges, and homes have computers for educational purposes. Students complete assignments and conduct research on computers in lab rooms. Computers have also become a source of entertainment. You can play games, listen to music, watch a video or movie, read a book or magazine, compose a video, retouch a photograph, plan a vacation, and more.</p>
+        
+        <!-- Learn More Button -->
+        <a href="https://en.wikipedia.org/wiki/Computer" target="_blank" class="button">Learn More</a>
+
+        <!-- Email Button -->
+        <a href="mailto:bhattacharjeesoma21@gmail.com" target="_blank" class="button" style="margin-top: 3.5px;">Email</a>
+    </div>
+</body>
+</html>
